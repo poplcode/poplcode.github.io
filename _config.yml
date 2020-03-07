@@ -1,5 +1,4 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
+title: POPL - Plain Old Php Library
+description: 레거시 PHP 개발자를 위한 PHP 라이브러리 모음
 google_analytics:
 theme: jekyll-theme-cayman
