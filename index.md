@@ -39,7 +39,7 @@ POPL(**P**lain **O**ld **P**hp **L**ibrary) 은 __레거시 PHP 개발자__ 를 
 # 튜토리얼
 데이터베이스에서 목록을 가져와서 보여주는 가장 간단한 예제는 다음과 같습니다.
 
-![익명게시판 목록](/assets/images/anobbs_list.png)  
+![익명게시판 목록](/assets/images/index/anobbs_list.png)  
 
 ```php
 require_once("../../popl/popl_core.php");
