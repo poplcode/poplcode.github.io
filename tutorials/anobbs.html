@@ -229,7 +229,7 @@
 popl&#xC740; <code>popl_env_config</code> &#xBCC0;&#xC218;&#xC758; &#xAC12;&#xC744; &#xBCF4;&#xACE0; &quot;config.$popl_env_config.php&quot; &#xD30C;&#xC77C;&#xC758; &#xC138;&#xD305;&#xC744; &#xC77D;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xBAA9;&#xB85D;-&#xB9CC;&#xB4E4;&#xAE30;">&#xBAA9;&#xB85D; &#xB9CC;&#xB4E4;&#xAE30;</h2>
 <p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0; &#xC788;&#xB294; &#xAC12; &#xBAA9;&#xB85D;&#xC744; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAC04;&#xB2E8;&#xD55C; &#xAE30;&#xB2A5;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBD05;&#xB2C8;&#xB2E4;.
-<img src="../assets/images/index/anobbs_list.png" alt="&#xC775;&#xBA85;&#xAC8C;&#xC2DC;&#xD310; &#xBAA9;&#xB85D;">  </p>
+<img src="../assets/images/anobbs/anobbs_list.png" alt="&#xC775;&#xBA85;&#xAC8C;&#xC2DC;&#xD310; &#xBAA9;&#xB85D;"></p>
 <p><code>samples/anobbs/index.php</code> &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC544;&#xB798;&#xC758; &#xB0B4;&#xC6A9;&#xC744; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 <span class="hljs-keyword">require_once</span>(<span class="hljs-string">&quot;../../popl/popl_core.php&quot;</span>);
@@ -250,6 +250,7 @@ $bbs_list = popl_db_select_paging(<span class="hljs-string">&quot;anobbs&quot;</
 <p>&#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; <code>http://localhost:8000</code> &#xC744; &#xC785;&#xB825;&#xD574;&#xC11C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.
 &#xAC1C;&#xBCC4; &#xC138;&#xD305;&#xC5D0; &#xB530;&#xB77C; &#xD3EC;&#xD2B8;&#xB294; &#xB2EC;&#xB77C;&#xC9C8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xC0C1;&#xC138;&#xD398;&#xC774;&#xC9C0;-&#xB9CC;&#xB4E4;&#xAE30;">&#xC0C1;&#xC138;&#xD398;&#xC774;&#xC9C0; &#xB9CC;&#xB4E4;&#xAE30;</h2>
+<p><img src="../assets/images/anobbs/anobbs_content_nolayout.png" alt="&#xC775;&#xBA85;&#xAC8C;&#xC2DC;&#xD310; &#xC0C1;&#xC138;&#xD398;&#xC774;&#xC9C0; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xBBF8;&#xC0AC;&#xC6A9;"></p>
 <h3 id="&#xC694;&#xCCAD;-&#xCC98;&#xB9AC;-&#xD30C;&#xC77C;-&#xC0DD;&#xC131;">&#xC694;&#xCCAD; &#xCC98;&#xB9AC; &#xD30C;&#xC77C; &#xC0DD;&#xC131;</h3>
 <p><code>samples/anobbs/content.php</code> &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC544;&#xB798;&#xC758; &#xB0B4;&#xC6A9;&#xC744; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -275,12 +276,14 @@ popl_view(<span class="hljs-string">&quot;content.view&quot;</span>, [<span clas
 &lt;/div&gt;
 </code></pre>
 <ul>
-<li><code>if (defined(&apos;POPL_IS_START&apos;)</code> : &#xBCF4;&#xC548;&#xC0C1;&#xC758; &#xC774;&#xC720;&#xB85C; content.view.php &#xD30C;&#xC77C;&#xC774; &#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; &#xC9C1;&#xC811; &#xC811;&#xADFC;&#xD588;&#xB2E4;&#xBA74; &#xC2E4;&#xD589;&#xC744; &#xBA48;&#xCDA5;&#xB2C8;&#xB2E4;. popl_view&#xB97C; &#xD1B5;&#xD574; &#xD638;&#xCD9C;&#xB418;&#xC5C8;&#xB2E4;&#xBA74; <code>POPL_IS_START</code> &#xB77C;&#xB294; &#xC0C1;&#xC218;&#xAC00; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC774; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li><code>if (defined(&apos;POPL_IS_START&apos;)</code> : &#xBCF4;&#xC548;&#xC0C1;&#xC758; &#xC774;&#xC720;&#xB85C; content.view.php &#xD30C;&#xC77C;&#xC774; &#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; &#xC9C1;&#xC811; &#xC811;&#xADFC;&#xD588;&#xB2E4;&#xBA74; (<a href="http://localhost:8000/content.view.php" target="_blank">http://localhost:8000/content.view.php</a>) &#xC2E4;&#xD589;&#xC744; &#xBA48;&#xCDA5;&#xB2C8;&#xB2E4;. popl_view&#xB97C; &#xD1B5;&#xD574; &#xD638;&#xCD9C;&#xB418;&#xC5C8;&#xB2E4;&#xBA74; <code>POPL_IS_START</code> &#xB77C;&#xB294; &#xC0C1;&#xC218;&#xAC00; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC774; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</li>
 <li><code>$title</code> : content.php &#xC5D0;&#xC11C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB85C; &#xC804;&#xB2EC;&#xD55C; &apos;title&apos; &#xBC30;&#xC5F4; &#xD0A4;&#xB97C; &#xBCC0;&#xC218;&#xBA85;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</li>
 <li><code>$bbs</code> : content.php &#xC5D0;&#xC11C; &#xC804;&#xB2EC;&#xD55C; bbs &#xBCC0;&#xC218;&#xB97C; &#xC9C1;&#xC811; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
 </ul>
 <p>&#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; <code>http://localhost:8000/content.php?bbs_id=1</code> &#xC744; &#xC785;&#xB825;&#xD574;&#xC11C; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>&#xC774;&#xC81C; <code>content.view.php</code> &#xD30C;&#xC77C;&#xC740; <strong>MVC</strong> &#xAD6C;&#xC870;&#xC5D0;&#xC11C; <strong>View</strong> &#xB77C;&#xACE0; &#xBD80;&#xB974;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD558;&#xAC8C; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xACF5;&#xD1B5;-&#xB808;&#xC774;&#xC544;&#xC6C3;-&#xC0AC;&#xC6A9;&#xD558;&#xAE30;">&#xACF5;&#xD1B5; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;</h2>
+<p><img src="../assets/images/anobbs/anobbs_content_layout.png" alt="&#xC775;&#xBA85;&#xAC8C;&#xC2DC;&#xD310; &#xC0C1;&#xC138;&#xD398;&#xC774;&#xC9C0; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xC0AC;&#xC6A9;"></p>
 <h3 id="&#xACF5;&#xD1B5;-&#xB808;&#xC774;&#xC544;&#xC6C3;-&#xB9CC;&#xB4E4;&#xAE30;">&#xACF5;&#xD1B5; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xB9CC;&#xB4E4;&#xAE30;</h3>
 <p>&#xB300;&#xBD80;&#xBD84;&#xC758; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xB294; &#xACF5;&#xD1B5;&#xC758; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xB0B4;&#xC6A9;&#xB9CC; &#xBC14;&#xB01D;&#xB2C8;&#xB2E4;.
 &#xB530;&#xB77C;&#xC11C; &#xACF5;&#xD1B5;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBD05;&#xB2C8;&#xB2E4;.
@@ -296,8 +299,8 @@ popl_view(<span class="hljs-string">&quot;content.view&quot;</span>, [<span clas
 &lt;/div&gt;
 </code></pre>
 <ul>
-<li><code>&lt;?= $title</code> : &#xC77C;&#xBC18; &#xD654;&#xBA74; &#xD30C;&#xC77C;&#xCC98;&#xB7FC; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC5D0;&#xC11C;&#xB3C4; &#xC694;&#xCCAD; &#xCC98;&#xB9AC; &#xD30C;&#xC77C;&#xC5D0;&#xC11C; &#xB118;&#xACA8;&#xC900; &#xAC12;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774; &#xAC12;&#xC740; &#xC544;&#xB798; &#xC694;&#xCCAD; &#xCC98;&#xB9AC; &#xD30C;&#xC77C; &#xC218;&#xC815; &#xBD80;&#xBD84;&#xC5D0;&#xC11C; &#xC218;&#xC815;&#xD574; &#xBD05;&#xB2C8;&#xB2E4;.</li>
-<li><code>&lt;?= $POPL_VIEW_CONTENT ?&gt;</code> : POPL&#xC740; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xC0AC;&#xC6A9;&#xC2DC; &#xBA3C;&#xC800; &#xCEE8;&#xD150;&#xCE20; &#xB0B4;&#xC6A9;&#xC744; &#xAC00;&#xC838;&#xC624;&#xACE0; &#xADF8; &#xB0B4;&#xC6A9;&#xC5D0; <code>$POPL_VIEW_CONTENT</code> &#xB77C;&#xB294; &#xD2B9;&#xC218;&#xD55C; &#xC774;&#xB984;&#xC744; &#xBD99;&#xC785;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC5D0;&#xC11C; <code>$POPL_VIEW_CONTENT</code> &#xBCC0;&#xC218;&#xC758; &#xAC12;&#xC744; &#xBCF4;&#xC5EC;&#xC90D;&#xB2C8;&#xB2E4;.</li>
+<li><code>&lt;?= $title</code> : &#xC77C;&#xBC18; &#xD654;&#xBA74; &#xD30C;&#xC77C;&#xCC98;&#xB7FC; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC5D0;&#xC11C;&#xB3C4; &#xC694;&#xCCAD; &#xCC98;&#xB9AC; &#xD30C;&#xC77C;&#xC5D0;&#xC11C; &#xB118;&#xACA8;&#xC900; &#xAC12;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+<li><code>&lt;?= $POPL_VIEW_CONTENT ?&gt;</code> : POPL&#xC740; &#xB808;&#xC774;&#xC544;&#xC6C3; &#xC0AC;&#xC6A9;&#xC2DC; &#xBA3C;&#xC800; &#xCEE8;&#xD150;&#xCE20; &#xB0B4;&#xC6A9;&#xC744; &#xAC00;&#xC838;&#xC624;&#xACE0; &#xADF8; &#xB0B4;&#xC6A9;&#xC5D0; <code>$POPL_VIEW_CONTENT</code> &#xB77C;&#xB294; &#xD2B9;&#xC218;&#xD55C; &#xC774;&#xB984;&#xC744; &#xBD99;&#xC785;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC5D0;&#xC11C; <code>$POPL_VIEW_CONTENT</code> &#xBCC0;&#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xBA74; &#xCEE8;&#xD150;&#xCE20; &#xB0B4;&#xC6A9;&#xC774; &#xCD9C;&#xB825;&#xB429;&#xB2C8;&#xB2E4;.</li>
 </ul>
 <h3 id="&#xD654;&#xBA74;-&#xD30C;&#xC77C;-&#xC218;&#xC815;">&#xD654;&#xBA74; &#xD30C;&#xC77C; &#xC218;&#xC815;</h3>
 <p><code>samples/anobbs/content.view.php</code> &#xD30C;&#xC77C;&#xC744; &#xC870;&#xAE08; &#xC218;&#xC815;&#xD574;&#xC11C; &#xACF5;&#xD1B5; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
@@ -308,6 +311,46 @@ popl_view(<span class="hljs-string">&quot;content.view&quot;</span>, [<span clas
 <li><code>$POPL_VIEW_LAYOUT</code> : 2&#xBC88;&#xC9F8; &#xC904;&#xC5D0; <code>$POPL_VIEW_LAYOUT</code> &#xBCC0;&#xC218;&#xAC00; &#xCD94;&#xAC00;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. POPL&#xC740; <code>$POPL_VIEW_LAYOUT</code> &#xBCC0;&#xC218;&#xAC00; &#xC788;&#xB2E4;&#xBA74; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xB294; &#xACBD;&#xB85C;&#xB77C;&#xACE0; &#xD310;&#xB2E8;&#xD558;&#xC5EC; &#xBDF0;&#xB97C; &#xB80C;&#xB354;&#xB9C1;&#xD569;&#xB2C8;&#xB2E4;. <code>.php</code> &#xD655;&#xC7A5;&#xC790;&#xB294; &#xC5C6;&#xB2E4;&#xB294; &#xC810;&#xC5D0; &#xC720;&#xC758;&#xD558;&#xC138;&#xC694;.</li>
 </ul>
 <p>&#xD55C; &#xC904; &#xCD94;&#xAC00;&#xB85C; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xAE00;&#xC4F0;&#xAE30;-&#xD3FC;-&#xB9CC;&#xB4E4;&#xAE30;">&#xAE00;&#xC4F0;&#xAE30; &#xD3FC; &#xB9CC;&#xB4E4;&#xAE30;</h2>
+<p>&#xC775;&#xBA85; &#xAC8C;&#xC2DC;&#xD310;&#xC774;&#xB2C8; &#xB204;&#xAD6C;&#xB098; &#xAE00;&#xC744; &#xC4F8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+<code>samples/anobbs/write.php</code> &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC744; &#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">require_once</span>(<span class="hljs-string">&quot;../../popl/popl_core.php&quot;</span>);
+popl_view_layout_direct_start();
+<span class="hljs-meta">?&gt;</span>
+&lt;form name=<span class="hljs-string">&quot;write&quot;</span> action=<span class="hljs-string">&quot;write.php&quot;</span> method=<span class="hljs-string">&quot;post&quot;</span>&gt;
+    &lt;p&gt;&#xC81C;&#xBAA9; : &lt;input type=<span class="hljs-string">&apos;text&apos;</span> name=<span class="hljs-string">&quot;title&quot;</span> style=<span class="hljs-string">&apos;width:80%;&apos;</span> /&gt;&lt;/p&gt;
+    &lt;p&gt;&#xB0B4;&#xC6A9; : &lt;textarea name=<span class="hljs-string">&quot;content&quot;</span> rows=<span class="hljs-string">&quot;5&quot;</span> style=<span class="hljs-string">&apos;width:80%;&apos;</span>&gt;&lt;/textarea&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;input type=<span class="hljs-string">&apos;submit&apos;</span> value=<span class="hljs-string">&quot;&#xC800;&#xC7A5;&#xD558;&#xAE30;&quot;</span> /&gt;
+&lt;/form&gt;
+<span class="hljs-meta">&lt;?php</span> popl_flash_show(<span class="hljs-string">&quot;&lt;p&gt;&quot;</span>,<span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>); <span class="hljs-meta">?&gt;</span>
+<span class="hljs-meta">&lt;?php</span>
+popl_view_layout_direct_end(<span class="hljs-string">&quot;common.view.layout&quot;</span>, [<span class="hljs-string">&apos;title&apos;</span>=&gt; <span class="hljs-string">&apos;&#xAE00;&#xC4F0;&#xAE30;&apos;</span>]);
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<ul>
+<li><code>popl_view_layout_direct_start()</code> : &#xC694;&#xCCAD; &#xCC98;&#xB9AC;(&#xCEE8;&#xD2B8;&#xB864;&#xB7EC;) &#xD30C;&#xC77C;&#xACFC; &#xD654;&#xBA74;(&#xBDF0;) &#xD30C;&#xC77C;&#xC744; &#xB530;&#xB85C; &#xBD84;&#xB9AC;&#xD558;&#xC9C0; &#xC54A;&#xACE0; &#xD55C; &#xD30C;&#xC77C;&#xC5D0; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;&#xC11C; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xB3C4; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xBCF8;&#xBB38; &#xC601;&#xC5ED;&#xC774; &#xC2DC;&#xC791;&#xB418;&#xB294; &#xACF3;&#xC5D0; <code>popl_view_layout_direct_start()</code> &#xB85C; &#xC2DC;&#xC791;&#xD558;&#xACE0; &#xBCF8;&#xBB38; &#xC601;&#xC5ED;&#xC774; &#xB05D;&#xB098;&#xBA74; <code>popl_view_layout_direct_end</code> &#xB85C; &#xB2EB;&#xC2B5;&#xB2C8;&#xB2E4;. </li>
+<li><code>popl_flash_show</code> : &#xD50C;&#xB798;&#xC2DC; &#xBA54;&#xC138;&#xC9C0;&#xB97C; &#xBCF4;&#xC5EC;&#xC904; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. </li>
+</ul>
+<h2 id="&#xAE00;&#xC4F0;&#xAE30;-&#xAE30;&#xB2A5;-&#xB9CC;&#xB4E4;&#xAE30;">&#xAE00;&#xC4F0;&#xAE30; &#xAE30;&#xB2A5; &#xB9CC;&#xB4E4;&#xAE30;</h2>
+<p>&#xC2E4;&#xC81C;&#xB85C; &#xAE00;&#xC774; &#xC4F0;&#xC5EC;&#xC9C0;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xBD05;&#xB2C8;&#xB2E4;.
+<code>samples/anobbs/write.form.php</code> &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC544;&#xB798; &#xB0B4;&#xC6A9;&#xC744; &#xBD99;&#xC5EC;&#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">require_once</span>(<span class="hljs-string">&quot;../../popl/popl_core.php&quot;</span>);
+popl_valid_http_method_post() <span class="hljs-keyword">or</span> popl_response_redirect(<span class="hljs-string">&quot;write.php&quot;</span>);
+
+$title = popl_param_post_san_html_remove(<span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;r,minlen:1&quot;</span>) <span class="hljs-keyword">or</span> popl_response_redirect_flash(<span class="hljs-string">&quot;write.php&quot;</span>, <span class="hljs-string">&quot;&#xC81C;&#xBAA9;&#xC740; 1&#xAE00;&#xC790; &#xC774;&#xC0C1;&#xC785;&#xB2C8;&#xB2E4;.&quot;</span>);
+$content = popl_param_post_san_html_encode(<span class="hljs-string">&quot;content&quot;</span>, <span class="hljs-string">&quot;r,minlen:10&quot;</span>) <span class="hljs-keyword">or</span> popl_response_redirect_flash(<span class="hljs-string">&quot;write.php&quot;</span>, <span class="hljs-string">&quot;&#xCEE8;&#xD150;&#xCE20;&#xB294; 10&#xAE00;&#xC790; &#xC774;&#xC0C1;&#xC785;&#xB2C8;&#xB2E4;.&quot;</span>);
+
+$last_id = popl_db_insert_standard(<span class="hljs-string">&quot;anobbs&quot;</span>, [<span class="hljs-string">&quot;title&quot;</span>=&gt;$title, <span class="hljs-string">&quot;content&quot;</span>=&gt;$content]) <span class="hljs-keyword">or</span> popl_response_redirect(<span class="hljs-string">&quot;write.php&quot;</span>);
+popl_response_redirect(<span class="hljs-string">&quot;content.php?bbs_id=&quot;</span> . $last_id);
+</code></pre>
+<ul>
+<li><code>popl_valid_http_method_post</code> : http method &#xAC00; <strong>POST</strong> &#xAC00; &#xC544;&#xB2C8;&#xBA74; false &#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. </li>
+<li><code>$title =</code> : title &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xAC80;&#xC99D;&#xD574; &#xBCF4;&#xACE0; &#xC131;&#xACF5;&#xD558;&#xBA74; html&#xC744; &#xC9C0;&#xC6B4; &#xCC44; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. &#xC2E4;&#xD328;&#xD558;&#xBA74; &#xD50C;&#xB798;&#xC2DC; &#xBA54;&#xC138;&#xC9C0;&#xC640; &#xD568;&#xAED8; write.php &#xB85C; &#xB2E4;&#xC2DC; &#xB9AC;&#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><code>$content=</code> : content &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xAC80;&#xC99D;&#xD574; &#xBCF4;&#xACE0; &#xC131;&#xACF5;&#xD558;&#xBA74; html&#xC744; &#xC778;&#xCF54;&#xB529;&#xD55C; &#xD6C4; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. &#xC2E4;&#xD328;&#xD558;&#xBA74; &#xD50C;&#xB798;&#xC2DC; &#xBA54;&#xC138;&#xC9C0;&#xC640; &#xD568;&#xAED8; write.php &#xB85C; &#xB2E4;&#xC2DC; &#xB9AC;&#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li><code>$last_id =</code> : anobbs &#xD14C;&#xC774;&#xBE14;&#xC5D0; &#xAE30;&#xBCF8;&#xAC12;(insert_date, use_yn) &#xACFC; &#xD568;&#xAED8; insert &#xD55C; &#xD6C4; id &#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. &#xC2E4;&#xD328;&#xD558;&#xBA74; &#xB2E4;&#xC2DC; write.php &#xB85C; &#xB9AC;&#xB2E4;&#xC774;&#xB809;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
 
                                 
                                 </section>
@@ -347,7 +390,7 @@ popl_view(<span class="hljs-string">&quot;content.view&quot;</span>, [<span clas
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"익명 게시판 만들기","level":"1.2.1","depth":2,"previous":{"title":"튜토리얼","level":"1.2","depth":1,"path":"tutorial.md","ref":"tutorial.md","articles":[{"title":"익명 게시판 만들기","level":"1.2.1","depth":2,"path":"tutorials/anobbs.md","ref":"tutorials/anobbs.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tutorials/anobbs.md","mtime":"2020-03-10T03:25:58.663Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T03:26:48.001Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"익명 게시판 만들기","level":"1.2.1","depth":2,"previous":{"title":"튜토리얼","level":"1.2","depth":1,"path":"tutorial.md","ref":"tutorial.md","articles":[{"title":"익명 게시판 만들기","level":"1.2.1","depth":2,"path":"tutorials/anobbs.md","ref":"tutorials/anobbs.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tutorials/anobbs.md","mtime":"2020-03-10T15:52:38.612Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T15:53:07.636Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

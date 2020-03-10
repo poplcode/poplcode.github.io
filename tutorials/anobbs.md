@@ -62,7 +62,7 @@ popl은 `popl_env_config` 변수의 값을 보고 "config.$popl_env_config.php" 
 
 ## 목록 만들기
 데이터베이스에 있는 값 목록을 보여주는 간단한 기능을 만들어 봅니다.
-![익명게시판 목록](/assets/images/index/anobbs_list.png)  
+![익명게시판 목록](/assets/images/anobbs/anobbs_list.png)
 
 `samples/anobbs/index.php` 파일을 생성하고 아래의 내용을 입력합니다.
 ```php
@@ -86,6 +86,8 @@ foreach($bbs_list as $bbs){
 개별 세팅에 따라 포트는 달라질 수 있습니다.
 
 ## 상세페이지 만들기
+![익명게시판 상세페이지 레이아웃 미사용](/assets/images/anobbs/anobbs_content_nolayout.png)
+
 ### 요청 처리 파일 생성
 `samples/anobbs/content.php` 파일을 생성하고 아래의 내용을 입력합니다.
 
@@ -116,13 +118,16 @@ popl_view("content.view", ["bbs"=>$bbs, "title"=>$bbs['title']]);
 </div>
 ```
 
-* `if (defined('POPL_IS_START')` : 보안상의 이유로 content.view.php 파일이 웹브라우저에서 직접 접근했다면 실행을 멈춥니다. popl_view를 통해 호출되었다면 `POPL_IS_START` 라는 상수가 있으므로 아래 내용이 정상적으로 실행됩니다.
+* `if (defined('POPL_IS_START')` : 보안상의 이유로 content.view.php 파일이 웹브라우저에서 직접 접근했다면 (http://localhost:8000/content.view.php) 실행을 멈춥니다. popl_view를 통해 호출되었다면 `POPL_IS_START` 라는 상수가 있으므로 아래 내용이 정상적으로 실행됩니다.
 * `$title` : content.php 에서 파라미터로 전달한 'title' 배열 키를 변수명으로 사용합니다.
 * `$bbs` : content.php 에서 전달한 bbs 변수를 직접 사용할 수 있습니다.
 
 웹브라우저에서 `http://localhost:8000/content.php?bbs_id=1` 을 입력해서 확인합니다.
 
 이제 `content.view.php` 파일은 **MVC** 구조에서 **View** 라고 부르는 역할을 하게 되었습니다.
+
+## 공통 레이아웃 사용하기
+![익명게시판 상세페이지 레이아웃 사용](/assets/images/anobbs/anobbs_content_layout.png)
 
 ### 공통 레이아웃 만들기
 대부분의 웹사이트는 공통의 레이아웃을 사용하고 내용만 바뀝니다.
@@ -141,8 +146,8 @@ popl_view("content.view", ["bbs"=>$bbs, "title"=>$bbs['title']]);
 </div>
 ```
 
-* `<?= $title` : 일반 화면 파일처럼 레이아웃에서도 요청 처리 파일에서 넘겨준 값을 사용할 수 있습니다. 이 값은 아래 요청 처리 파일 수정 부분에서 수정해 봅니다.
-* `<?= $POPL_VIEW_CONTENT ?>` : POPL은 레이아웃 사용시 먼저 컨텐츠 내용을 가져오고 그 내용에 `$POPL_VIEW_CONTENT` 라는 특수한 이름을 붙입니다. 따라서 레이아웃에서 `$POPL_VIEW_CONTENT` 변수의 값을 보여줍니다.
+* `<?= $title` : 일반 화면 파일처럼 레이아웃에서도 요청 처리 파일에서 넘겨준 값을 사용할 수 있습니다.
+* `<?= $POPL_VIEW_CONTENT ?>` : POPL은 레이아웃 사용시 먼저 컨텐츠 내용을 가져오고 그 내용에 `$POPL_VIEW_CONTENT` 라는 특수한 이름을 붙입니다. 따라서 레이아웃에서 `$POPL_VIEW_CONTENT` 변수를 출력하면 컨텐츠 내용이 출력됩니다.
 
 ### 화면 파일 수정
 `samples/anobbs/content.view.php` 파일을 조금 수정해서 공통 레이아웃을 사용해 보겠습니다.
@@ -154,3 +159,46 @@ popl_view("content.view", ["bbs"=>$bbs, "title"=>$bbs['title']]);
 * `$POPL_VIEW_LAYOUT` : 2번째 줄에 `$POPL_VIEW_LAYOUT` 변수가 추가되었습니다. POPL은 `$POPL_VIEW_LAYOUT` 변수가 있다면 레이아웃을 지정하는 경로라고 판단하여 뷰를 렌더링합니다. `.php` 확장자는 없다는 점에 유의하세요.
 
 한 줄 추가로 레이아웃을 사용할 수 있게 되었습니다.
+
+## 글쓰기 폼 만들기
+익명 게시판이니 누구나 글을 쓸 수 있습니다.
+`samples/anobbs/write.php` 파일을 생성하고 아래 내용을 넣습니다.
+
+```php
+<?php
+require_once("../../popl/popl_core.php");
+popl_view_layout_direct_start();
+?>
+<form name="write" action="write.php" method="post">
+    <p>제목 : <input type='text' name="title" style='width:80%;' /></p>
+    <p>내용 : <textarea name="content" rows="5" style='width:80%;'></textarea></p>
+    <p><input type='submit' value="저장하기" />
+</form>
+<?php popl_flash_show("<p>","</p>"); ?>
+<?php
+popl_view_layout_direct_end("common.view.layout", ['title'=> '글쓰기']);
+?>
+```
+* `popl_view_layout_direct_start()` : 요청 처리(컨트롤러) 파일과 화면(뷰) 파일을 따로 분리하지 않고 한 파일에 사용하면서 레이아웃도 사용해야 할 때 사용합니다. 본문 영역이 시작되는 곳에 `popl_view_layout_direct_start()` 로 시작하고 본문 영역이 끝나면 `popl_view_layout_direct_end` 로 닫습니다. 
+* `popl_flash_show` : 플래시 메세지를 보여줄 때 사용합니다. 
+
+## 글쓰기 기능 만들기
+실제로 글이 쓰여지는 기능을 만들어 봅니다.
+`samples/anobbs/write.form.php` 파일을 생성하고 아래 내용을 붙여넣습니다.
+
+```php
+<?php
+require_once("../../popl/popl_core.php");
+popl_valid_http_method_post() or popl_response_redirect("write.php");
+
+$title = popl_param_post_san_html_remove("title", "r,minlen:1") or popl_response_redirect_flash("write.php", "제목은 1글자 이상입니다.");
+$content = popl_param_post_san_html_encode("content", "r,minlen:10") or popl_response_redirect_flash("write.php", "컨텐츠는 10글자 이상입니다.");
+
+$last_id = popl_db_insert_standard("anobbs", ["title"=>$title, "content"=>$content]) or popl_response_redirect("write.php");
+popl_response_redirect("content.php?bbs_id=" . $last_id);
+```
+
+* `popl_valid_http_method_post` : http method 가 **POST** 가 아니면 false 를 반환합니다. 
+* `$title =` : title 파라미터를 검증해 보고 성공하면 html을 지운 채 반환합니다. 실패하면 플래시 메세지와 함께 write.php 로 다시 리다이렉트합니다.
+* `$content=` : content 파라미터를 검증해 보고 성공하면 html을 인코딩한 후 반환합니다. 실패하면 플래시 메세지와 함께 write.php 로 다시 리다이렉트합니다.
+* `$last_id =` : anobbs 테이블에 기본값(insert_date, use_yn) 과 함께 insert 한 후 id 를 반환합니다. 실패하면 다시 write.php 로 리다이렉트합니다.
