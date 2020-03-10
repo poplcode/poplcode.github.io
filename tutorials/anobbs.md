@@ -162,6 +162,9 @@ popl_view("content.view", ["bbs"=>$bbs, "title"=>$bbs['title']]);
 
 ## 글쓰기 폼 만들기
 익명 게시판이니 누구나 글을 쓸 수 있습니다.
+
+![글쓰기](/assets/images/anobbs/anobbs_write.png)
+
 `samples/anobbs/write.php` 파일을 생성하고 아래 내용을 넣습니다.
 
 ```php
