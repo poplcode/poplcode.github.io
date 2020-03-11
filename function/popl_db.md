@@ -59,7 +59,8 @@ pdo 객체를 얻어올 때 쓰입니다.
 `popl_db_fetch_all($query, $param)`
 
 ### 설명
-
+데이터베이스에 `select` 시 사용합니다.
+기본적으로 결과 집합을 반환하며 실패하면 빈 배열(`[]`) 을 반환합니다.
 
 ---        
 ## popl_db_make_terms
@@ -67,6 +68,7 @@ pdo 객체를 얻어올 때 쓰입니다.
 `popl_db_make_terms($kvParam=[])`
 
 ### 설명
+sql 쿼리에서 `where` 절을 만들 때 사용합니다.
 
 
 ---        
