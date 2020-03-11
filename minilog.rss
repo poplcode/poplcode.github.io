@@ -1,0 +1,179 @@
+<rss version="2.0">
+<channel>
+<title>POPL MINI LOG</title>
+<link>https://popl.ml/minilog.html</link>
+<description/>
+<language>ko</language>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+<generator>minilog</generator>
+<managingEditor>poplcode</managingEditor>
+<item>
+<title>너무 방법론에 집착하지 말자.</title>
+<link>https://popl.ml/minilog.html#너무-방법론에-집착하지-말자</link>
+<description>너무 방법론에 집착하지 말자.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#너무-방법론에-집착하지-말자</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>mvc는 필요없다.</title>
+<link>https://popl.ml/minilog.html#mvc는-필요없다</link>
+<description>mvc는 필요없다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#mvc는-필요없다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>커맨드 라인 인터페이스는 없다.</title>
+<link>https://popl.ml/minilog.html#커맨드-라인-인터페이스는-없다</link>
+<description>커맨드 라인 인터페이스는 없다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#커맨드-라인-인터페이스는-없다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>파일 경로와 실제 웹 경로가 일치하는 건 사실 지극히 정상적인 것이다.</title>
+<link>https://popl.ml/minilog.html#파일-경로와-실제-웹-경로가-일치하는-건-사실-지극히-정상적인-것이다</link>
+<description>파일 경로와 실제 웹 경로가 일치하는 건 사실 지극히 정상적인 것이다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#파일-경로와-실제-웹-경로가-일치하는-건-사실-지극히-정상적인-것이다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>fancy url에 집착하지 말자</title>
+<link>https://popl.ml/minilog.html#fancy-url에-집착하지-말자</link>
+<description>fancy url에 집착하지 말자</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#fancy-url에-집착하지-말자</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>라이브러리와 프레임워크의 차이</title>
+<link>https://popl.ml/minilog.html#라이브러리와-프레임워크의-차이</link>
+<description>라이브러리와 프레임워크의 차이</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#라이브러리와-프레임워크의-차이</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>popl 프로젝트는 기존의 코딩스타일과 소스코드를 가능한 적게 건들면서 빠른 개발을 하기 위한 프로젝트다.</title>
+<link>https://popl.ml/minilog.html#popl-프로젝트는-기존의-코딩스타일과-소스코드를-가능한-적게-건들면서-빠른-개발을-하기-위한-프로젝트다</link>
+<description>popl 프로젝트는 기존의 코딩스타일과 소스코드를 가능한 적게 건들면서 빠른 개발을 하기 위한 프로젝트다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#popl-프로젝트는-기존의-코딩스타일과-소스코드를-가능한-적게-건들면서-빠른-개발을-하기-위한-프로젝트다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>프레임워크 혹은 라이브러리는 새로 배우기 위해 존재하는 것이 아니라 쉽고 빠르며 안전한 개발을 위해 존재해야 한다.</title>
+<link>https://popl.ml/minilog.html#프레임워크-혹은-라이브러리는-새로-배우기-위해-존재하는-것이-아니라-쉽고-빠르며-안전한-개발을-위해-존재해야-한다</link>
+<description>프레임워크 혹은 라이브러리는 새로 배우기 위해 존재하는 것이 아니라 쉽고 빠르며 안전한 개발을 위해 존재해야 한다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#프레임워크-혹은-라이브러리는-새로-배우기-위해-존재하는-것이-아니라-쉽고-빠르며-안전한-개발을-위해-존재해야-한다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>초보자에게 클래스는 가혹하다.</title>
+<link>https://popl.ml/minilog.html#초보자에게-클래스는-가혹하다</link>
+<description>초보자에게 클래스는 가혹하다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#초보자에게-클래스는-가혹하다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>PHP의 함수 이름이 제 멋대로라고?</title>
+<link>https://popl.ml/minilog.html#php의-함수-이름이-제-멋대로라고</link>
+<description>PHP의 함수 이름이 제 멋대로라고?</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#php의-함수-이름이-제-멋대로라고</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>전역변수가 어때서?</title>
+<link>https://popl.ml/minilog.html#전역변수가-어때서</link>
+<description>전역변수가 어때서?</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#전역변수가-어때서</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>POPL로 oop로 MVC 갖춰서 만드는것보다 더 빨리 명확하게 만들 수 있다는 걸 증명해주마.</title>
+<link>https://popl.ml/minilog.html#popl로-oop로-mvc-갖춰서-만드는것보다-더-빨리-명확하게-만들-수-있다는-걸-증명해주마</link>
+<description>POPL로 oop로 MVC 갖춰서 만드는것보다 더 빨리 명확하게 만들 수 있다는 걸 증명해주마.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#popl로-oop로-mvc-갖춰서-만드는것보다-더-빨리-명확하게-만들-수-있다는-걸-증명해주마</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>php 코어는 지금도 거대한 함수덩어리다.</title>
+<link>https://popl.ml/minilog.html#php-코어는-지금도-거대한-함수덩어리다</link>
+<description>php 코어는 지금도 거대한 함수덩어리다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#php-코어는-지금도-거대한-함수덩어리다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>모던 PHP 가 추구하는 것도 모든 프로젝트가 모든 면에서 반드시 현대적이어야 하는 걸 의미하지는 않을 것이다.</title>
+<link>https://popl.ml/minilog.html#모던-php-가-추구하는-것도-모든-프로젝트가-모든-면에서-반드시-현대적이어야-하는-걸-의미하지는-않을-것이다</link>
+<description>모던 PHP 가 추구하는 것도 모든 프로젝트가 모든 면에서 반드시 현대적이어야 하는 걸 의미하지는 않을 것이다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#모던-php-가-추구하는-것도-모든-프로젝트가-모든-면에서-반드시-현대적이어야-하는-걸-의미하지는-않을-것이다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>러닝커브가 너무 높아지면 쉽게 포기하게 된다.</title>
+<link>https://popl.ml/minilog.html#러닝커브가-너무-높아지면-쉽게-포기하게-된다</link>
+<description>러닝커브가 너무 높아지면 쉽게 포기하게 된다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#러닝커브가-너무-높아지면-쉽게-포기하게-된다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>모던 PHP도 좋습니다. 그런데 그럴꺼면 왜 php를 쓰죠?</title>
+<link>https://popl.ml/minilog.html#모던-php도-좋습니다-그런데-그럴꺼면-왜-php를-쓰죠</link>
+<description>모던 PHP도 좋습니다. 그런데 그럴꺼면 왜 php를 쓰죠?</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#모던-php도-좋습니다-그런데-그럴꺼면-왜-php를-쓰죠</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>popl은 1인 개발자를 위한 라이브러리 셋이다.</title>
+<link>https://popl.ml/minilog.html#popl은-1인-개발자를-위한-라이브러리-셋이다</link>
+<description>popl은 1인 개발자를 위한 라이브러리 셋이다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#popl은-1인-개발자를-위한-라이브러리-셋이다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>코드 몽키와 개발자</title>
+<link>https://popl.ml/minilog.html#코드-몽키와-개발자</link>
+<description>코드 몽키와 개발자</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#코드-몽키와-개발자</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>목표는 빠르게 뭔가를 만들어보는 거다.</title>
+<link>https://popl.ml/minilog.html#목표는-빠르게-뭔가를-만들어보는-거다</link>
+<description>목표는 빠르게 뭔가를 만들어보는 거다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#목표는-빠르게-뭔가를-만들어보는-거다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>누구나 코드몽키로 시작한다.</title>
+<link>https://popl.ml/minilog.html#누구나-코드몽키로-시작한다</link>
+<description>누구나 코드몽키로 시작한다.</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#누구나-코드몽키로-시작한다</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+<item>
+<title>NOT SERIOUS</title>
+<link>https://popl.ml/minilog.html#not-serious</link>
+<description>NOT SERIOUS</description>
+<author>poplcode</author>
+<guid>https://popl.ml/minilog.html#not-serious</guid>
+<pubDate>Wed, 11 Mar 2020 12:49:20 </pubDate>
+</item>
+</channel>
+</rss>
