@@ -419,7 +419,141 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;-&#xD568;&#xC218;">&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xD568;&#xC218;</h1>
+<p>POPL &#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xD568;&#xC218; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;.<br>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4; &#xD568;&#xC218;&#xB294; &#xBAA8;&#xB450; <code>popl_db_</code> &#xB85C; &#xC2DC;&#xC791;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xD568;&#xC218;-&#xBAA9;&#xB85D;">&#xD568;&#xC218; &#xBAA9;&#xB85D;</h2>
+<ul>
+<li><a href="#popldbgetpdo">popl_db_get_pdo</a></li>
+<li><a href="#popldbexecute">popl_db_execute</a></li>
+<li><a href="#popldbexecutelastid">popl_db_execute_last_id</a></li>
+<li><a href="#popldbfetchall">popl_db_fetch_all</a></li>
+<li><a href="#popldbmaketerms">popl_db_make_terms</a></li>
+<li><a href="#popldbmakeorderby">popl_db_make_orderby</a></li>
+<li><a href="#popldbmakelimit">popl_db_make_limit</a></li>
+<li><a href="#setupsertdatecolumn">set_upsert_date_column</a></li>
+<li><a href="#popldbselect">popl_db_select</a></li>
+<li><a href="#popldbselectfirst">popl_db_select_first</a></li>
+<li><a href="#popldbselectfirstbyid">popl_db_select_first_by_id</a></li>
+<li><a href="#popldbselectexist">popl_db_select_exist</a></li>
+<li><a href="#popldbselectpaging">popl_db_select_paging</a></li>
+<li><a href="#popldbinsert">popl_db_insert</a></li>
+<li><a href="#popldbsetdefaultvalues">popl_db_set_default_values</a></li>
+<li><a href="#popldbinsertstandard">popl_db_insert_standard</a></li>
+<li><a href="#popldbupdatestandard">popl_db_update_standard</a></li>
+<li><a href="#popldbupsert">popl_db_upsert</a></li>
+<li><a href="#popldbupsertstandard">popl_db_upsert_standard</a></li>
+<li><a href="#popldbdelete">popl_db_delete</a></li>
+<li><a href="#popldbdeletebyid">popl_db_delete_by_id</a></li>
+</ul>
+<hr>
+<h2 id="popldbgetpdo">popl_db_get_pdo</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_get_pdo() : PDO</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<p>pdo &#xAC1D;&#xCCB4;&#xB97C; &#xC5BB;&#xC5B4;&#xC62C; &#xB54C; &#xC4F0;&#xC785;&#xB2C8;&#xB2E4;.<br>&#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C;&#xB294; <code>popl_db</code> &#xAD00;&#xB828; &#xB2E4;&#xB978; &#xD568;&#xC218;&#xC5D0;&#xC11C; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xB97C; &#xD578;&#xB4E4;&#xB9C1;&#xD560; &#xB54C; &#xC4F0;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<h2 id="popldbexecute">popl_db_execute</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_execute($query, $param) : boolean</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0; <code>update</code> &#xD639;&#xC740; <code>delete</code> &#xC2E4;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xC9C1;&#xC811; SQL &#xCFFC;&#xB9AC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xACE0; &#xBC18;&#xD658;&#xAC12;&#xC774; &#xC131;&#xACF5;/&#xC2E4;&#xD328; &#xC5EC;&#xBD80;&#xC77C; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<h2 id="popldbexecutelastid">popl_db_execute_last_id</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_execute_last_id($query, $param) : int or false</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<p>&#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC5D0; <code>insert</code> &#xC2E4;&#xD589;&#xC2DC; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xC131;&#xACF5;&#xD558;&#xBA74; primary key id &#xB97C;, &#xC2E4;&#xD328;&#xD558;&#xBA74; false &#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<h2 id="popldbfetchall">popl_db_fetch_all</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_fetch_all($query, $param)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbmaketerms">popl_db_make_terms</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_make_terms($kvParam=[])</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbmakeorderby">popl_db_make_orderby</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_make_orderby($orderby)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbmakelimit">popl_db_make_limit</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_make_limit($limit)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="setupsertdatecolumn">set_upsert_date_column</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>set_upsert_date_column($row)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbselect">popl_db_select</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_select($table_name, $kvParam=[], $orderby=&apos;&apos;, $limit=null)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbselectfirst">popl_db_select_first</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_select_first($table_name, $kvParam=[], $orderby=&apos;&apos;)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbselectfirstbyid">popl_db_select_first_by_id</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_select_first_by_id($table_name, $id)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbselectexist">popl_db_select_exist</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_select_exist($table_name, $kvParam=[])</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbselectpaging">popl_db_select_paging</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_select_paging($table_name, $page_no, $kvParam=[], $orderby=&apos;insert_date desc&apos;, $count_per_page=10)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbinsert">popl_db_insert</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_insert($table_name, $kvparam=[])</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbsetdefaultvalues">popl_db_set_default_values</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_set_default_values($kvparam, $default_key_vals)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbinsertstandard">popl_db_insert_standard</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_insert_standard($table_name, $kvparam)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbupdatestandard">popl_db_update_standard</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_update_standard($table_name, $kvparam, $where_terms)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbupsert">popl_db_upsert</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_upsert($table_name, $kvparam, $where_terms)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbupsertstandard">popl_db_upsert_standard</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_upsert_standard($table_name, $kvparam, $where_terms)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbdelete">popl_db_delete</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_delete($table_name, $where_terms)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+<hr>
+<h2 id="popldbdeletebyid">popl_db_delete_by_id</h2>
+<h3 id="&#xD568;&#xC218;-&#xC6D0;&#xD615;">&#xD568;&#xC218; &#xC6D0;&#xD615;</h3>
+<p><code>popl_db_delete_by_id($table_name, $id)</code></p>
+<h3 id="&#xC124;&#xBA85;">&#xC124;&#xBA85;</h3>
+
                                 
                                 </section>
                             
@@ -462,7 +596,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"데이터베이스 함수","level":"1.3.3","depth":2,"next":{"title":"플래시 메세지 함수","level":"1.3.4","depth":2,"path":"function/popl_flash.md","ref":"function/popl_flash.md","articles":[]},"previous":{"title":"쿠키 함수","level":"1.3.2","depth":2,"path":"function/popl_cookie.md","ref":"function/popl_cookie.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["folding-menu"],"pluginsConfig":{"folding-menu":{"animationDuration":500,"sticky":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"function/popl_db.md","mtime":"2020-03-10T18:06:00.395Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-11T05:15:38.017Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"데이터베이스 함수","level":"1.3.3","depth":2,"next":{"title":"플래시 메세지 함수","level":"1.3.4","depth":2,"path":"function/popl_flash.md","ref":"function/popl_flash.md","articles":[]},"previous":{"title":"쿠키 함수","level":"1.3.2","depth":2,"path":"function/popl_cookie.md","ref":"function/popl_cookie.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["folding-menu"],"pluginsConfig":{"folding-menu":{"animationDuration":500,"sticky":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"function/popl_db.md","mtime":"2020-03-11T07:16:33.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-11T07:18:07.163Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
