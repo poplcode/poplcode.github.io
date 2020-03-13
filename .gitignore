@@ -1,3 +1,4 @@
 _deploy.bat
 _func_auto_gen
 _func_auto_gen/*
+*.py
