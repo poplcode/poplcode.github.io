@@ -25,8 +25,6 @@
 
 빠르게 작동하고 실행되는 것은 소프트웨어 설계가 아닙니다. 그건 눈 앞에 닥친 문제를 분석하지 않았다는 뜻이며 그 선택이 장기적으로 어떤 시사점을 주는지 이해하지 못하고 있다는 뜻입니다.
 
-**A:** The ideas, thoughts, and conclusions expressed on this website doesn't take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.
-
 **Q:** 써드파티 패키지가 잘못되었다고 말하는 건가요?
 
 **A:** 아니요. 다른 사람이 만든 라이브러리 사용을 장려하고 있습니다. 어떤 제한이나 제약을 가하지 않고 자신의 프로젝트에 쉽게 통합할 수 있는 코드는 훌륭합니다!

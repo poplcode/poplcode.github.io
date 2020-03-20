@@ -1,6 +1,4 @@
 # 보안 무시 #
-Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user's identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.
-
 > 프로그래머의 문제점은 너무 늦을때까지 프로그래머가 뭘 하는 지 말할 수 없다는 점입니다.
 >
 > -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
@@ -18,10 +16,6 @@ Secure coding is the practice of writing programs that are resistant to attack b
 PHP는 동시에 프로그래밍 언어와 웹 프레임 워크라는 점에서 특이합니다. 즉 PHP에는 웹을 위한 내장 기능이 언어 자체에 내장되어 있고, 이는 안전하지 않은 코드를 작성하기가 매우 쉬운 결과로 나타납니다.
 
 ## 보안은 기본 ##
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
-
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
-
 > 복잡성을 걷어내세요. 개발자의 생명을 갉아먹고 제품을 계획, 빌드 혹은 테스트하기 어렵게 만들고, 보안문제가 발생하며 사용자 및 관리자의 불만을 유발합니다.
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)

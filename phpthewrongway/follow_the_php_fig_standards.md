@@ -18,8 +18,6 @@ PHP-FIG의 문제점 중 하나는 많은 프레임 워크와 오픈 소스 프�
 
 어떤 종류의 표준 그룹이 필요하다면 프레임워크 및 오픈 소스 CMS 프로젝트 개발자뿐만 아니라 전체 PHP 커뮤니티의 관심사를 반영해야합니다. 그것은 PHP 프로그래밍 언어 자체를 사용하는 개발자들에 의해 대표되어야 하며 투표권을 더 큰 회원들이 가지도록 반영해야 합니다.
 
-Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.
-
 PHP-FIG에서 개발한 표준을 채택하기로 선택한 경우 소프트웨어 코드에 영향을 미치는 표준들 - 오토로더, 표준 PSR-0, PSR-4 및 기타 여러 표준과 같은 여러 표준을 이해해야 합니다.
 
 많은 산업군은 높은 확장성, 런타임 신뢰성, 비용 효율적인 소프트웨어를 필요로 하나 PHP-FIG의 표준으로서는 개발할 수 없습니다.
